@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip"
+    android:clickable="true"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    >
+
+    <!--ImageView
+        android:id="@+id/icon"
+        android:layout_width="22px"
+        android:layout_height="22px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="4px"
+        android:src="@drawable/screen" >
+    </ImageView-->
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+       >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="desc"
+        android:scaleType="fitXY"
+        android:background="@drawable/round"
+        android:src="@drawable/dohafestivalcity" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/red_right_arrow"
+        android:clickable="true"/>
+
+
+
+</LinearLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="2dp"
+android:background="@color/iron"
+android:layout_marginTop="8dp"
+    />
+
+    </LinearLayout>
